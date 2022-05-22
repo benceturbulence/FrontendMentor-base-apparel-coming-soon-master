@@ -13,7 +13,7 @@ body {
 
 .card {
     width: 80%;
-    min-width: 350px;
+    min-width: 320px;
     margin: 0  auto;
 }
 
@@ -45,7 +45,7 @@ main {
 h1 {
     text-transform: uppercase;
     letter-spacing: 8px;
-
+    padding-top: .5rem;
 }
 
 h1 span {
@@ -63,8 +63,10 @@ h1 span {
     color: var(--desaturated-red);
     font-weight: 400;
     font-size: 14px;
-    margin: 1rem 0;
-    line-height: 1.5
+    line-height: 1.5;
+    padding: 2rem 0;
+    
+
 }
 
 .hero_content {
@@ -80,7 +82,7 @@ h1 span {
     margin-bottom: 2rem;
 }
 
-
+input,
 ::placeholder {
     color: var(--desaturated-red);
     font-family: 'Josefin Sans', sans-serif;
@@ -102,6 +104,17 @@ h1 span {
     border: 1px solid rgba(0, 0, 0, 0.1)
 }
 
+#submit_email:hover,
+#submit_email:focus,
+input:hover,
+input:focus {
+    cursor: pointer;
+    outline: none;
+    color: var(--desaturated-red);
+    background-color: #fff;
+    font-size: 1rem;
+}
+
 
 
 
@@ -109,6 +122,8 @@ h1 span {
 
     .card {
         max-width: 700px;
+        border: 1px solid var(--desaturated-red);
+
     }
     .flex {
         display: flex;
@@ -152,10 +167,10 @@ h1 span {
         justify-content: space-around;
     }
 
-    .description {
-        padding-bottom: 2rem;
-    }
 
 
 }
 
+.attribution {
+    width: auto;
+}
