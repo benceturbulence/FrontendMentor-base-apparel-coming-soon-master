@@ -8,6 +8,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 20vh auto;
+    background: linear-gradient(315deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%), rgb(248, 191, 191));
 }
 
 
@@ -15,6 +16,7 @@ body {
     width: 80%;
     min-width: 320px;
     margin: 0  auto;
+
 }
 
 .hero_image {
