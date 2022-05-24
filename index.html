@@ -17,49 +17,60 @@
   
   
   <body>
-    <div class="card flex">
-      <header class = "container mobile">
-        <img src ="images/logo.svg">
-      </header>
+    <div class="card">
+
+      <div class = "container mobile">
+        <img src ="images/logo.svg" alt ="logo of the base apperel collection">
+      </div>
       
-      <section class = "hero_image"></section>
+      <section class = "hero_image">
+        <img class = "mobile" src = "images/hero-mobile.jpg" alt = "photo of a model having the shirt of the Base apparel collection">
+      </section>
 
-      <main>
 
-        <header class = "container desktop">
+
+
+
+      <main class = "container">
+
+        <header class = "desktop">
           <img src ="images/logo.svg">
         </header>
         
-        <section class = "hero_content container">
+        <section class = "hero_content">
           <h1><span class = "accent">We 're</span>
             <span>coming</span>
             <span>soon</span>
           </h1>
 
-          <div class = "description">
+
+          <p class = "description">
             Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
-          </div>
+          </p>
           
           <div class = "email">
-            <input class = "email_input" type ="email" placeholder="Email Address"><img  id = "submit_email" src = "images/icon-arrow.svg" alt = "click to add">
+            <input id = "email_input" type ="email" placeholder="Email Address">
+            <img  id = "submit_email" src = "images/icon-arrow.svg" alt = "click to add" aria-label="click here to subscribe">
+            <img id = "error_email" src = "images/icon-error.svg" alt = "incorrect email">
+            <p id="error_email_msg"></p>
           </div>
         </section>
       </main>
-    </div>
 
-      </main>
+
+    </div>
   
 
   
  
   <footer>
     <p class="attribution container">
-
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       <br>
       Coded by <a href="https://www.github.com/benceturbulence">benceturbulence</a>.
     </p>
   </footer>
+  <script src = "index.js"></script>
 </body>
 </html>
